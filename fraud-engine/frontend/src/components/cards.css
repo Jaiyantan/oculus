@@ -1,0 +1,63 @@
+.glass-card-container {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-card, 26px);
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.glass-card-container:hover {
+  border-color: var(--border-medium);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.card__grain {
+  display: none;
+}
+
+/* Content Formatting */
+.glass-card-content {
+  position: relative;
+  z-index: 5;
+  padding: clamp(20px, 2vw, 32px);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.glass-card-title {
+  color: var(--text-primary);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.48;
+  margin-bottom: 16px;
+}
+
+.glass-card-metric {
+  margin-top: auto;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.glass-card-unit {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1;
+  color: var(--text-primary);
+}
+
+.glass-card-caption {
+  color: var(--text-secondary);
+  font-size: 14px;
+  line-height: 1.45;
+  margin-bottom: 16px;
+}
